@@ -1,1 +1,1 @@
-hk.github.io
+cdn-hk.dw-j.sbs
