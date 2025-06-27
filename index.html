@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bing</title>
-  <link rel="icon" href="https://www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png" />
+  <link rel="icon" href="favicon.png" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -52,10 +52,23 @@
     登录 | 设置
   </div>
   <div class="search-box">
-    <input type="text" placeholder="搜索或输入网址..." />
+    <input type="text" placeholder="搜索或输入网址..." id="searchInput" />
   </div>
   <div class="footer">
     © 2025 Microsoft Bing | 仅供演示使用
   </div>
+
+  <script>
+    document.getElementById('searchInput').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        const query = this.value.trim();
+        if (query.startsWith('http://') || query.startsWith('https://')) {
+          window.location.href = query;
+        } else {
+          window.location.href = 'https://www.bing.com/search?q=' + encodeURIComponent(query);
+        }
+      }
+    });
+  </script>
 </body>
 </html>
