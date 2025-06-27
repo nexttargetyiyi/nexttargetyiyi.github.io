@@ -1,84 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bing</title>
+  <link rel="icon" href="https://www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png" />
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
-      background: #f2f2f2;
+      background: url('https://bing.com/th?id=OHR.TaipeiZebra_EN-US1975412707_UHD.jpg&rf=LaDigue_UHD.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      padding: 20px;
+      text-align: right;
+    }
+    .header a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .search-container {
+      margin: auto;
       text-align: center;
-      color: #333;
     }
-    #logo {
-      margin-top: 150px;
+    .search-container h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
     }
-    #logo img {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-    }
-    #searchForm {
-      margin-top: 30px;
-    }
-    input[type="text"] {
-      width: 50%;
+    .search-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 25px;
+      padding: 10px 20px;
+      display: inline-flex;
+      align-items: center;
+      width: 60%;
       max-width: 600px;
-      padding: 10px 15px;
-      font-size: 16px;
-      border: 1px solid #a3a3a3;
-      border-radius: 2px;
+    }
+    .search-box input {
+      border: none;
+      background: none;
+      flex: 1;
+      padding: 10px;
+      font-size: 18px;
       outline: none;
     }
-    .buttons {
-      margin-top: 20px;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 0 5px;
-      font-size: 14px;
+    .search-box button {
+      background: none;
       border: none;
-      border-radius: 2px;
-      background: #0063b1;
-      color: #fff;
       cursor: pointer;
     }
-    button:hover {
-      background: #004b8d;
+    .search-box img {
+      width: 20px;
+      height: 20px;
     }
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      padding: 10px 0;
-      background: rgba(255,255,255,0.8);
+    .footer {
+      text-align: center;
+      padding: 20px;
       font-size: 14px;
-      color: #666;
-    }
-    footer a {
-      margin: 0 10px;
-      color: #0063b1;
-      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
-  <div id="logo">
-    <img src="https://www.bing.com/th?id=OHR.FiordlandNight_RE_LCL241486_1920x1080.jpg&rf=LaDigue_1920x1080.jpg" alt="Bing Logo">
+  <div class="header">
+    <a href="#">登录</a>
+    <a href="#">设置</a>
   </div>
-  <form id="searchForm" action="#" method="get">
-    <input type="text" name="q" placeholder="Search Bing..." />
-    <div class="buttons">
-      <button type="submit">Bing Search</button>
-      <button type="button" onclick="alert('Feeling lucky!');">I'm Feeling Lucky</button>
+
+  <div class="search-container">
+    <h1>Bing</h1>
+    <div class="search-box">
+      <input type="text" placeholder="搜索或输入网页地址..." />
+      <button>
+        <img src="https://www.bing.com/sa/simg/SharedSpriteDesktopSearchHoverIcon_5aefcb858f4b47ecb1b89d26f2a8db4b.svg" alt="搜索" />
+      </button>
     </div>
-  </form>
-  <footer>
-    <a href="#">Privacy</a> |
-    <a href="#">Terms of Use</a> |
-    <a href="#">© Microsoft</a>
-  </footer>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Microsoft Bing | 仅供演示使用
+  </div>
 </body>
 </html>
