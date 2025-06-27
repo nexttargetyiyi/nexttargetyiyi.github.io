@@ -1,1 +1,1 @@
-cdn-hk.dw-j.sbs
+# nexttargetyiyi.github.io
