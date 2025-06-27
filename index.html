@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      color: #333;
+    }
+    #logo {
+      margin-top: 150px;
+    }
+    #logo img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+    #searchForm {
+      margin-top: 30px;
+    }
+    input[type="text"] {
+      width: 50%;
+      max-width: 600px;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #a3a3a3;
+      border-radius: 2px;
+      outline: none;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 14px;
+      border: none;
+      border-radius: 2px;
+      background: #0063b1;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #004b8d;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0;
+      background: rgba(255,255,255,0.8);
+      font-size: 14px;
+      color: #666;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #0063b1;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="logo">
+    <img src="https://www.bing.com/th?id=OHR.FiordlandNight_RE_LCL241486_1920x1080.jpg&rf=LaDigue_1920x1080.jpg" alt="Bing Logo">
+  </div>
+  <form id="searchForm" action="#" method="get">
+    <input type="text" name="q" placeholder="Search Bing..." />
+    <div class="buttons">
+      <button type="submit">Bing Search</button>
+      <button type="button" onclick="alert('Feeling lucky!');">I'm Feeling Lucky</button>
+    </div>
+  </form>
+  <footer>
+    <a href="#">Privacy</a> |
+    <a href="#">Terms of Use</a> |
+    <a href="#">© Microsoft</a>
+  </footer>
+</body>
+</html>
