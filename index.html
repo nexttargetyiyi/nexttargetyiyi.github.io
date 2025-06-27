@@ -8,84 +8,54 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: url('https://bing.com/th?id=OHR.TaipeiZebra_EN-US1975412707_UHD.jpg&rf=LaDigue_UHD.jpg') no-repeat center center fixed;
+      background: url('bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
       height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
     .header {
       padding: 20px;
       text-align: right;
-    }
-    .header a {
       color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .search-container {
-      margin: auto;
-      text-align: center;
-    }
-    .search-container h1 {
-      font-size: 56px;
-      margin-bottom: 20px;
     }
     .search-box {
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 25px;
-      padding: 10px 20px;
-      display: inline-flex;
+      display: flex;
+      justify-content: center;
       align-items: center;
-      width: 60%;
-      max-width: 600px;
+      flex: 1;
     }
     .search-box input {
-      border: none;
-      background: none;
-      flex: 1;
-      padding: 10px;
+      padding: 10px 20px;
       font-size: 18px;
-      outline: none;
-    }
-    .search-box button {
-      background: none;
+      width: 60%;
+      max-width: 600px;
+      border-radius: 25px;
       border: none;
-      cursor: pointer;
-    }
-    .search-box img {
-      width: 20px;
-      height: 20px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.85);
+      color: #333;
     }
     .footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
       background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <a href="#">登录</a>
-    <a href="#">设置</a>
+    登录 | 设置
   </div>
-
-  <div class="search-container">
-    <h1>Bing</h1>
-    <div class="search-box">
-      <input type="text" placeholder="搜索或输入网页地址..." />
-      <button>
-        <img src="https://www.bing.com/sa/simg/SharedSpriteDesktopSearchHoverIcon_5aefcb858f4b47ecb1b89d26f2a8db4b.svg" alt="搜索" />
-      </button>
-    </div>
+  <div class="search-box">
+    <input type="text" placeholder="搜索或输入网址..." />
   </div>
-
   <div class="footer">
-    &copy; 2025 Microsoft Bing | 仅供演示使用
+    © 2025 Microsoft Bing | 仅供演示使用
   </div>
 </body>
 </html>
